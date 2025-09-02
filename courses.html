@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours | Med Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <nav>
+    <img src="img/logo16.jpg" alt="Logo Med Education" width="150" height="50">
+    <div class="navigation">
+        <button class="menu-toggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="courses.html">Cours</a></li>
+            <li><a href="exmens.html">Examens</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="btn-login">Connexion</a></li>
+            <li><a href="register.html" class="btn-register">Inscription</a></li>
+        </ul>
+    </div>
+</nav>
+    <!-- Slider Banner Section -->
+    <section class="slider-banner">
+        <div class="slides-container">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/medffff.jpg');">
+                <div class="slide-content">
+                    <h1>Nos Programmes de Formation</h1>
+                    <p>Explorez nos spécialités médicales et accédez à des ressources pédagogiques de qualité</p>
+                    <a href="#medecine" class="btn btn-primary">Découvrir</a>
+                </div>
+            </div>
+            
+            <div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/forma1.jpg');">
+                <div class="slide-content">
+                    <h1>Formation Médicale Continue</h1>
+                    <p>Améliorez vos compétences avec nos programmes de formation continue pour professionnels</p>
+                    <a href="#medecine" class="btn btn-primary">En savoir plus</a>
+                </div>
+            </div>
+            
+            <div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/medical-slide3.jpg');">
+                <div class="slide-content">
+                    <h1>Ressources Pédagogiques</h1>
+                    <p>Accédez à notre bibliothèque de ressources médicales complètes</p>
+                    <a href="#resources" class="btn btn-primary">Explorer</a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="slider-control prev" aria-label="Slide précédent">&#10094;</button>
+        <button class="slider-control next" aria-label="Slide suivant">&#10095;</button>
+        
+        <div class="slider-pagination">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Specialties Tabs -->
+    <section class="specialties-tabs">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="medecine">Médecine</button>
+                <button class="tab-btn" data-tab="chirurgie-dentaire">Chirurgie Dentaire</button>
+                <button class="tab-btn" data-tab="pharmacie">Pharmacie</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medicine Content -->
+    <section id="medecine" class="specialty-content active-tab">
+        <div class="container">
+            <h2 class="specialty-title">Formation en Médecine</h2>
+            <p class="specialty-description">Programme complet couvrant toutes les disciplines médicales fondamentales et cliniques.</p>
+            
+            <div class="courses-grid">
+                <!-- Année 1 -->
+                <div class="year-section" data-aos="fade-up">
+                    <h3 class="year-title">Première Année (PACES)</h3>
+                    <div class="courses-list">
+                        <div class="course-card">
+                            <div class="course-header">
+                                <i class="fas fa-book-medical"></i>
+                                <h4>Anatomie Générale</h4>
+                            </div>
+                            <div class="course-body">
+                                <p>Fondements de l'anatomie humaine et terminologie médicale.</p>
+                                <ul class="course-details">
+                                    <li><i class="far fa-clock"></i> 60 heures</li>
+                                    <li><i class="fas fa-chalkboard-teacher"></i> Dr. Martin Dupont</li>
+                                </ul>
+                            </div>
+                            <div class="course-footer">
+                                <a href="#" class="btn btn-outline">Voir le cours</a>
+                                <a href="exmens.html" class="btn btn-primary">Examens <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-header">
+                                <i class="fas fa-dna"></i>
+                                <h4>Biologie Cellulaire</h4>
+                            </div>
+                            <div class="course-body">
+                                <p>Structure et fonction des cellules eucaryotes et procaryotes.</p>
+                                <ul class="course-details">
+                                    <li><i class="far fa-clock"></i> 45 heures</li>
+                                    <li><i class="fas fa-chalkboard-teacher"></i> Pr. Sophie Laurent</li>
+                                </ul>
+                            </div>
+                            <div class="course-footer">
+                                <a href="#" class="btn btn-outline">Voir le cours</a>
+                                <a href="exmens.html" class="btn btn-primary">Examens <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Année 2 -->
+                <div class="year-section" data-aos="fade-up">
+                    <h3 class="year-title">Deuxième Année</h3>
+                    <div class="courses-list">
+                        <div class="course-card">
+                            <div class="course-header">
+                                <i class="fas fa-heartbeat"></i>
+                                <h4>Physiologie</h4>
+                            </div>
+                            <div class="course-body">
+                                <p>Fonctionnement des systèmes organiques humains.</p>
+                                <ul class="course-details">
+                                    <li><i class="far fa-clock"></i> 70 heures</li>
+                                    <li><i class="fas fa-chalkboard-teacher"></i> Dr. Éric Moreau</li>
+                                </ul>
+                            </div>
+                            <div class="course-footer">
+                                <a href="#" class="btn btn-outline">Voir le cours</a>
+                                <a href="exmens.html" class="btn btn-primary">Examens <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-header">
+                                <i class="fas fa-bacterium"></i>
+                                <h4>Bactériologie-Virologie</h4>
+                            </div>
+                            <div class="course-body">
+                                <p>Microorganismes pathogènes et techniques de diagnostic.</p>
+                                <ul class="course-details">
+                                    <li><i class="far fa-clock"></i> 50 heures</li>
+                                    <li><i class="fas fa-chalkboard-teacher"></i> Pr. Claire Dubois</li>
+                                </ul>
+                            </div>
+                            <div class="course-footer">
+                                <a href="#" class="btn btn-outline">Voir le cours</a>
+                                <a href="exams.html" class="btn btn-primary">Examens <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chirurgie Dentaire Content -->
+    <section id="chirurgie-dentaire" class="specialty-content">
+        <div class="container">
+            <h2 class="specialty-title">Formation en Chirurgie Dentaire</h2>
+            <p class="specialty-description">Programme spécialisé en odontologie et techniques dentaires avancées.</p>
+            
+            <div class="courses-grid">
+                <!-- Année 1 -->
+                <div class="year-section" data-aos="fade-up">
+                    <h3 class="year-title">Première Année</h3>
+                    <div class="courses-list">
+                        <div class="course-card">
+                            <div class="course-header">
+                                <i class="fas fa-tooth"></i>
+                                <h4>Anatomie Dentaire</h4>
+                            </div>
+                            <div class="course-body">
+                                <p>Morphologie et structure des dents et des arcades dentaires.</p>
+                                <ul class="course-details">
+                                    <li><i class="far fa-clock"></i> 40 heures</li>
+                                    <li><i class="fas fa-chalkboard-teacher"></i> Dr. Jean Lefèvre</li>
+                                </ul>
+                            </div>
+                            <div class="course-footer">
+                                <a href="#" class="btn btn-outline">Voir le cours</a>
+                                <a href="exmens.html" class="btn btn-primary">Examens <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-header">
+                                <i class="fas fa-teeth-open"></i>
+                                <h4>Matériaux Dentaires</h4>
+                            </div>
+                            <div class="course-body">
+                                <p>Propriétés et utilisation des matériaux en odontologie.</p>
+                                <ul class="course-details">
+                                    <li><i class="far fa-clock"></i> 35 heures</li>
+                                    <li><i class="fas fa-chalkboard-teacher"></i> Dr. Marie Garnier</li>
+                                </ul>
+                            </div>
+                            <div class="course-footer">
+                                <a href="#" class="btn btn-outline">Voir le cours</a>
+                                <a href="exmens.html" class="btn btn-primary">Examens <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pharmacie Content -->
+    <section id="pharmacie" class="specialty-content">
+        <div class="container">
+            <h2 class="specialty-title">Formation en Pharmacie</h2>
+            <p class="specialty-description">Programme complet en sciences pharmaceutiques et pharmacologie.</p>
+            
+            <div class="courses-grid">
+                <!-- Année 1 -->
+                <div class="year-section" data-aos="fade-up">
+                    <h3 class="year-title">Première Année</h3>
+                    <div class="courses-list">
+                        <div class="course-card">
+                            <div class="course-header">
+                                <i class="fas fa-pills"></i>
+                                <h4>Chimie Pharmaceutique</h4>
+                            </div>
+                            <div class="course-body">
+                                <p>Bases de la chimie appliquée aux médicaments.</p>
+                                <ul class="course-details">
+                                    <li><i class="far fa-clock"></i> 55 heures</li>
+                                    <li><i class="fas fa-chalkboard-teacher"></i> Pr. Alain Petit</li>
+                                </ul>
+                            </div>
+                            <div class="course-footer">
+                                <a href="#" class="btn btn-outline">Voir le cours</a>
+                                <a href="exmens.html" class="btn btn-primary">Examens <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-header">
+                                <i class="fas fa-flask"></i>
+                                <h4>Galenique</h4>
+                            </div>
+                            <div class="course-body">
+                                <p>Techniques de formulation et préparation des médicaments.</p>
+                                <ul class="course-details">
+                                    <li><i class="far fa-clock"></i> 60 heures</li>
+                                    <li><i class="fas fa-chalkboard-teacher"></i> Dr. Isabelle Roux</li>
+                                </ul>
+                            </div>
+                            <div class="course-footer">
+                                <a href="#" class="btn btn-outline">Voir le cours</a>
+                                <a href="exmens.html" class="btn btn-primary">Examens <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2>Ressources Complémentaires</h2>
+            <div class="resources-grid">
+                <div class="resource-card" data-aos="fade-up">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Bibliothèque Médicale</h3>
+                    <p>Accédez à notre collection de livres et publications scientifiques.</p>
+                    <a href="#" class="btn btn-secondary">Explorer</a>
+                </div>
+                
+                <div class="resource-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-video"></i>
+                    <h3>Vidéos Pédagogiques</h3>
+                    <p>Plus de 500 heures de vidéos de cours et démonstrations.</p>
+                    <a href="#" class="btn btn-secondary">Regarder</a>
+                </div>
+                
+                <div class="resource-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>QCM Entraînement</h3>
+                    <p>Testez vos connaissances avec nos banques de questions.</p>
+                    <a href="exmens.html" class="btn btn-secondary">S'entraîner</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="img/logo16.jpg" alt="Med Education" class="footer-logo">
+                <p class="footer-description">
+                    Med Education est la plateforme leader d'apprentissage en médecine, offrant des ressources pédagogiques de qualité pour les étudiants et professionnels de santé.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Liens Rapides</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+                    <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Nos Cours</a></li>
+                    <li><a href="exmens.html"><i class="fas fa-chevron-right"></i> Examens Blancs</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> À Propos</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="login.html"><i class="fas fa-chevron-right"></i> Connexion</a></li>
+                    <li><a href="register.html"><i class="fas fa-chevron-right"></i> Inscription</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Nos Spécialités</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Médecine Générale</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Chirurgie Dentaire</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Pharmacie</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Pédiatrie</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Cardiologie</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Contactez-nous</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Hai Sabah - Oran - Algérie</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+213  779 351 179</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>Mededucation31@gamil.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Lun-Ven: 9h-18h</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2025 Med Education. Tous droits réservés.</p>
+                <div class="legal-links">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.specialty-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons and contents
+                    tabBtns.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active-tab'));
+
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    // Show corresponding content
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active-tab');
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
