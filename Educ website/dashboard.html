@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord | Med Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   <nav>
+    <img src="img/logo16.jpg" alt="Logo Med Education" width="150" height="50">
+    <div class="navigation">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="courses.html">Cours</a></li>
+            <li><a href="exmens.html">Examens</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html" class="active">Tableau de Bord</a></li>
+        </ul>
+    </div>
+    <div class="auth-buttons">
+        <a href="login.html" class="btn-login">Connexion</a>
+        <a href="register.html" class="btn-register">Inscription</a>
+    </div>
+    <div class="user-menu">
+        <img src="img/user-avatar.jpg" alt="Photo de profil" class="user-avatar">
+        <div class="dropdown-content">
+            <a href="profile.html"><i class="fas fa-user"></i> Mon Profil</a>
+            <a href="settings.html"><i class="fas fa-cog"></i> Paramètres</a>
+            <a href="logout.html"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Dashboard Header -->
+    <header class="dashboard-header">
+        <div class="container">
+            <h1>Tableau de Bord</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Accueil</a> / <span>Tableau de Bord</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Main Content -->
+    <main class="dashboard-container">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- Sidebar Navigation -->
+                <aside class="dashboard-sidebar">
+                    <div class="sidebar-menu">
+                        <ul>
+                            <li class="active">
+                                <a href="dashboard.html">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>Tableau de Bord</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="my-courses.html">
+                                    <i class="fas fa-book-open"></i>
+                                    <span>Mes Cours</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="my-exams.html">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span>Mes Examens</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="progress.html">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Ma Progression</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="messages.html">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Messages</span>
+                                    <span class="badge">3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <i class="fas fa-bell"></i>
+                                    <span>Notifications</span>
+                                    <span class="badge">5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="study-groups.html">
+                                    <i class="fas fa-users"></i>
+                                    <span>Groupes d'Étude</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Main Dashboard Content -->
+                <section class="dashboard-content">
+                    <!-- Welcome Banner -->
+                    <div class="welcome-banner" data-aos="fade-up">
+                        <div class="welcome-content">
+                            <h2>Bonjour, <span class="user-name">Dr. Ahmed</span> !</h2>
+                            <p>Vous avez 3 nouveaux messages et 2 cours en attente de révision</p>
+                            <a href="my-courses.html" class="btn btn-primary">Continuer mes cours</a>
+                        </div>
+                        <div class="welcome-image">
+                            <img src="img/dashboard-welcome.png" alt="Étudiant en médecine">
+                        </div>
+                    </div>
+
+                    <!-- Stats Cards -->
+                    <div class="stats-grid">
+                        <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="stat-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Cours Suivis</h3>
+                                <span class="stat-number">12</span>
+                            </div>
+                        </div>
+                        <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="stat-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Cours Complétés</h3>
+                                <span class="stat-number">8</span>
+                            </div>
+                        </div>
+                        <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Score Moyen</h3>
+                                <span class="stat-number">87%</span>
+                            </div>
+                        </div>
+                        <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Heures Étudiées</h3>
+                                <span class="stat-number">156</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Current Courses -->
+                    <section class="dashboard-section" data-aos="fade-up">
+                        <div class="section-header">
+                            <h2><i class="fas fa-book-open"></i> Mes Cours en Cours</h2>
+                            <a href="my-courses.html" class="btn btn-outline">Voir Tout</a>
+                        </div>
+                        <div class="courses-grid">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <img src="img/course-cardio.jpg" alt="Cardiologie">
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 65%"></div>
+                                    </div>
+                                    <span class="progress-percent">65%</span>
+                                </div>
+                                <div class="course-info">
+                                    <h3>Cardiologie Avancée</h3>
+                                    <p>Dr. Sophie Martin</p>
+                                    <div class="course-meta">
+                                        <span><i class="far fa-clock"></i> 12h restantes</span>
+                                        <span><i class="fas fa-chart-line"></i> 78% score</span>
+                                    </div>
+                                    <a href="course-details.html" class="btn btn-primary">Continuer</a>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <img src="img/course-neuro.jpg" alt="Neurologie">
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 42%"></div>
+                                    </div>
+                                    <span class="progress-percent">42%</span>
+                                </div>
+                                <div class="course-info">
+                                    <h3>Principes de Neurologie</h3>
+                                    <p>Pr. Jean Dupont</p>
+                                    <div class="course-meta">
+                                        <span><i class="far fa-clock"></i> 18h restantes</span>
+                                        <span><i class="fas fa-chart-line"></i> 85% score</span>
+                                    </div>
+                                    <a href="course-details.html" class="btn btn-primary">Continuer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Upcoming Exams -->
+                    <section class="dashboard-section" data-aos="fade-up">
+                        <div class="section-header">
+                            <h2><i class="fas fa-calendar-alt"></i> Examens à Venir</h2>
+                            <a href="my-exams.html" class="btn btn-outline">Voir Tout</a>
+                        </div>
+                        <div class="exams-list">
+                            <div class="exam-item">
+                                <div class="exam-date">
+                                    <span class="day">15</span>
+                                    <span class="month">Juin</span>
+                                </div>
+                                <div class="exam-info">
+                                    <h3>Examen Final de Cardiologie</h3>
+                                    <p>Module: Cardiologie Avancée</p>
+                                    <div class="exam-meta">
+                                        <span><i class="far fa-clock"></i> 09:00 - 11:00</span>
+                                        <span><i class="fas fa-book"></i> 50 questions</span>
+                                    </div>
+                                </div>
+                                <div class="exam-actions">
+                                    <a href="#" class="btn btn-outline">Réviser</a>
+                                </div>
+                            </div>
+                            <div class="exam-item">
+                                <div class="exam-date">
+                                    <span class="day">22</span>
+                                    <span class="month">Juin</span>
+                                </div>
+                                <div class="exam-info">
+                                    <h3>Test de Neurologie</h3>
+                                    <p>Module: Principes de Neurologie</p>
+                                    <div class="exam-meta">
+                                        <span><i class="far fa-clock"></i> 14:00 - 15:30</span>
+                                        <span><i class="fas fa-book"></i> 30 questions</span>
+                                    </div>
+                                </div>
+                                <div class="exam-actions">
+                                    <a href="#" class="btn btn-outline">Réviser</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Recent Activity -->
+                    <section class="dashboard-section" data-aos="fade-up">
+                        <div class="section-header">
+                            <h2><i class="fas fa-history"></i> Activité Récente</h2>
+                        </div>
+                        <div class="activity-feed">
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <p>Vous avez terminé le chapitre <strong>"Physiologie Cardiaque"</strong></p>
+                                    <span class="activity-time">Il y a 2 heures</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <p>Vous avez obtenu 92% au quiz <strong>"Anatomie du Cœur"</strong></p>
+                                    <span class="activity-time">Hier, 18:30</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <p>Nouveau message de <strong>Dr. Martin</strong> dans le forum de Cardiologie</p>
+                                    <span class="activity-time">Hier, 14:15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="img/logo16.jpg" alt="Med Education" class="footer-logo">
+                <p class="footer-description">
+                    Plateforme collaborative créée par des étudiants en médecine, pour des étudiants en médecine. 
+                    Ressources pédagogiques, partage de connaissances et entraide pour réussir ensemble.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Liens Rapides</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+                    <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Nos Cours</a></li>
+                    <li><a href="exmens.html"><i class="fas fa-chevron-right"></i> Examens Blancs</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> À Propos</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="dashboard.html"><i class="fas fa-chevron-right"></i> Tableau de Bord</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Nos Spécialités</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Médecine Générale</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Chirurgie Dentaire</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Pharmacie</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Pédiatrie</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Cardiologie</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Contactez-nous</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Hai Sabah - Oran - Algérie</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+213 779 351 179</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>Mededucation31@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Lun-Ven: 9h-18h</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2025 Med Education. Tous droits réservés.</p>
+                <div class="legal-links">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Back to top button
+        const backToTopBtn = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // User dropdown menu
+        const userAvatar = document.querySelector('.user-avatar');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        userAvatar.addEventListener('click', function(e) {
+            e.stopPropagation();
+            dropdownContent.classList.toggle('show');
+        });
+
+        // Close dropdown when clicking outside
+        window.addEventListener('click', function() {
+            if (dropdownContent.classList.contains('show')) {
+                dropdownContent.classList.remove('show');
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

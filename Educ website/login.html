@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion | Med Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <nav>
+    <img src="img/logo16.jpg" alt="Logo Med Education" width="150" height="50">
+    <div class="navigation">
+        <button class="menu-toggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="courses.html">Cours</a></li>
+            <li><a href="exmens.html">Examens</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="btn-login">Connexion</a></li>
+            <li><a href="register.html" class="btn-register">Inscription</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Login Banner Section -->
+    <section class="login-banner">
+        <div class="container">
+            <h1>Connectez-vous à votre compte</h1>
+            <p>Accédez à toutes les fonctionnalités réservées aux membres</p>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="container">
+            <div class="login-container" data-aos="fade-up">
+                <div class="login-box">
+                    <h2>Connexion</h2>
+                    <p class="login-subtitle">Entrez vos identifiants pour accéder à votre espace</p>
+                    
+                    <form class="login-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="email">Adresse Email</label>
+                            <div class="input-group">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Mot de passe</label>
+                            <div class="input-group">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+                                <button type="button" class="toggle-password" aria-label="Afficher le mot de passe">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-options">
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember" name="remember">
+                                <label for="remember">Se souvenir de moi</label>
+                            </div>
+                            <a href="forgot-password.html" class="forgot-password">Mot de passe oublié ?</a>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
+                        
+                        <div class="login-divider">
+                            <span>ou</span>
+                        </div>
+                        
+                        <div class="social-login">
+                            <a href="#" class="btn btn-social google">
+                                <i class="fab fa-google"></i> Continuer avec Google
+                            </a>
+                            <a href="#" class="btn btn-social facebook">
+                                <i class="fab fa-facebook-f"></i> Continuer avec Facebook
+                            </a>
+                        </div>
+                    </form>
+                    
+                    <div class="login-footer">
+                        <p>Pas encore membre ? <a href="register.html">Créez un compte</a></p>
+                    </div>
+                </div>
+                
+                <div class="login-image" data-aos="fade-left">
+                    <img src="img/etudiatns med.jpg" alt="Étudiants en médecine">
+                    <div class="login-quote">
+                        <blockquote>
+                            "La connaissance médicale est un trésor qui se partage. Rejoignez notre communauté d'apprentissage."
+                        </blockquote>
+                        <cite>- Équipe Med Education</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="img/logo16.jpg" alt="Med Education" class="footer-logo">
+                <p class="footer-description">
+                    Plateforme collaborative créée par des étudiants en médecine, pour des étudiants en médecine. 
+                    Ressources pédagogiques, partage de connaissances et entraide pour réussir ensemble.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Liens Rapides</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+                    <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Nos Cours</a></li>
+                    <li><a href="exmens.html"><i class="fas fa-chevron-right"></i> Examens Blancs</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> À Propos</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="login.html"><i class="fas fa-chevron-right"></i> Connexion</a></li>
+                    <li><a href="register.html"><i class="fas fa-chevron-right"></i> Inscription</a></li>
+               
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Nos Spécialités</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Médecine Générale</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Chirurgie Dentaire</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Pharmacie</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Pédiatrie</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Cardiologie</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Contactez-nous</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Hai Sabah - Oran - Algérie</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+213 779 351 179</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>Mededucation31@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Lun-Ven: 9h-18h</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2025 Med Education. Tous droits réservés.</p>
+                <div class="legal-links">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Back to top button
+        const backToTopBtn = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Toggle password visibility
+        const togglePassword = document.querySelector('.toggle-password');
+        const password = document.querySelector('#password');
+        
+        togglePassword.addEventListener('click', function() {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.querySelector('i').classList.toggle('fa-eye-slash');
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

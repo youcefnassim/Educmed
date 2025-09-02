@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil | Med Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <nav>
+    <img src="img/logo16.jpg" alt="Logo Med Education" width="150" height="50">
+    <div class="navigation">
+        <button class="menu-toggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="courses.html">Cours</a></li>
+            <li><a href="exmens.html">Examens</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="btn-login">Connexion</a></li>
+            <li><a href="register.html" class="btn-register">Inscription</a></li>
+        </ul>
+    </div>
+</nav>
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-content">
+            <h1>Bienvenue sur Med Education</h1>
+            <p>Votre plateforme d'apprentissage en médecine</p>
+            <div class="btn-container">
+                <a href="courses.html" class="btn btn-primary">En savoir plus</a>
+                <a href="courses.html" class="btn btn-secondary">Voir les cours</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="feature">
+        <div class="container">
+            <h2 class="feature-title">Nos Fonctionnalités Exceptionnelles</h2>
+            <p class="feature-subtitle">Nous offrons une variété de services premium pour révolutionner votre expérience d'apprentissage médical.</p>
+            
+            <div class="feature-list">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-medical"></i>
+                    </div>
+                    <h3>Formation en ligne</h3>
+                    <p>Accédez à des cours interactifs conçus par des experts médicaux, disponibles 24h/24.</p>
+                    <a href="courses.html" class="feature-link">Découvrir →</a>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Support expert</h3>
+                    <p>Bénéficiez d'un accompagnement personnalisé par des professionnels de santé.</p>
+                    <a href="contact.html" class="feature-link">En savoir plus →</a>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Réseau médical</h3>
+                    <p>Échangez avec une communauté de 10,000 professionnels et étudiants en médecine.</p>
+                    <a href="#" class="feature-link">Rejoindre →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses">
+        <div class="container">
+            <h2 class="section-title">Nos Programmes Académiques</h2>
+            <p class="section-subtitle">Explorez notre catalogue exhaustif de formations médicales, conçues par des experts pour chaque étape de votre parcours professionnel.</p>
+            
+            <div class="course-list">
+                <div class="course-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-img-container">
+                        <img src="img/medecine.jpg" alt="Médecine Générale" class="course-img">
+                        <span class="course-category">Fondamentaux</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-meta">
+                            <span class="course-duration">⏱ 12 Semaines</span>
+                            <span class="course-level">Niveau: Débutant</span>
+                        </div>
+                        <h3 class="course-title">Médecine Générale</h3>
+                        <p class="course-desc">Acquisition des bases essentielles de la pratique médicale contemporaine.</p>
+                        <div class="course-footer">
+                            <span class="course-price"></span>
+                            <a href="courses.html" class="course-btn">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-img-container">
+                        <img src="img/dentaire.jpg" alt="Chirurgie" class="course-img">
+                        <span class="course-category">Spécialisation</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-meta">
+                            <span class="course-duration">⏱ 24 Semaines</span>
+                            <span class="course-level">Niveau: Avancé</span>
+                        </div>
+                        <h3 class="course-title">Techniques Chirurgicales</h3>
+                        <p class="course-desc">Maîtrise des protocoles opératoires et gestion des interventions complexes.</p>
+                        <div class="course-footer">
+                            <span class="course-price"></span>
+                            <a href="courses.html" class="course-btn">Détails</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-img-container">
+                        <img src="img/phrma.jpg" alt="Pharmacologie" class="course-img">
+                        <span class="course-category">Recherche</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-meta">
+                            <span class="course-duration">⏱ 16 Semaines</span>
+                            <span class="course-level">Niveau: Intermédiaire</span>
+                        </div>
+                        <h3 class="course-title">Pharmacologie Clinique</h3>
+                        <p class="course-desc">Analyse des mécanismes d'action et stratégies thérapeutiques médicamenteuses.</p>
+                        <div class="course-footer">
+                            <span class="course-price"></span>
+                            <a href="courses.html" class="course-btn">Détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="courses-cta">
+                <a href="courses.html" class="cta-btn">Voir tous les cours <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+  <!-- Blog Section -->
+<section class="blog">
+    <div class="container">
+        <h2 class="section-title">Derniers Articles de Blog</h2>
+        <p class="section-subtitle">Conseils pratiques et actualités médicales pour les étudiants</p>
+        
+        <div class="blog-grid">
+            <article class="blog-post" data-aos="fade-up">
+                <div class="blog-img-container">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Innovations médicales">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category">Recherche</span>
+                    <h3>Les 5 Avancées Médicales à Suivre en 2025</h3>
+                    <p>Décryptage des innovations prometteuses en cancérologie, intelligence artificielle et thérapies géniques qui révolutionneront la pratique médicale.</p>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar-alt"></i> 15 mars 2025</span>
+                        <span><i class="far fa-clock"></i> 5 min de lecture</span>
+                    </div>
+                    <a href="#" class="btn btn-outline">Lire l'article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+            
+            <article class="blog-post" data-aos="fade-up" data-aos-delay="100">
+                <div class="blog-img-container">
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Nutrition médicale">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category">Bien-être</span>
+                    <h3>Nutrition Optimale pour Étudiants en Médecine</h3>
+                    <p>Les aliments clés pour booster votre concentration et mémoire pendant les longues sessions de révisions et gardes hospitalières.</p>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar-alt"></i> 2 mars 2025</span>
+                        <span><i class="far fa-clock"></i> 4 min de lecture</span>
+                    </div>
+                    <a href="#" class="btn btn-outline">Lire l'article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+            
+            <article class="blog-post" data-aos="fade-up" data-aos-delay="200">
+                <div class="blog-img-container">
+                    <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Réussite aux examens">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category">Pédagogie</span>
+                    <h3>Méthodologie : Réussir ses Examens Médicaux</h3>
+                    <p>Techniques éprouvées pour organiser ses révisions, gérer son stress et maximiser ses résultats aux ECNi et examens blancs.</p>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar-alt"></i> 20 février 2025</span>
+                        <span><i class="far fa-clock"></i> 7 min de lecture</span>
+                    </div>
+                    <a href="exams.html" class="btn btn-outline">Lire l'article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+        
+        <div class="text-center" style="margin-top: 40px;">
+            <a href="blog.html" class="btn btn-primary">Voir tous les articles <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="img/logo16.jpg" alt="Med Education" class="footer-logo">
+                <p class="footer-description">
+                    Med Education est la plateforme leader d'apprentissage en médecine, offrant des ressources pédagogiques de qualité pour les étudiants et professionnels de santé.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Liens Rapides</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+                    <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Nos Cours</a></li>
+                    <li><a href="exmens.html"><i class="fas fa-chevron-right"></i> Examens Blancs</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> À Propos</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="login.html"><i class="fas fa-chevron-right"></i> Connexion</a></li>
+                    <li><a href="register.html"><i class="fas fa-chevron-right"></i> Inscription</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Nos Spécialités</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Médecine Générale</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Chirurgie Dentaire</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Pharmacie</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Pédiatrie</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Cardiologie</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Contactez-nous</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Hai Sabah - Oran - Algérie</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+213  779 351 179</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>Mededucation31@gamil.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Lun-Ven: 9h-18h</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2025 Med Education. Tous droits réservés.</p>
+                <div class="legal-links">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Back to top button
+        const backToTopBtn = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
